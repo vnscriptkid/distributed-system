@@ -38,3 +38,9 @@ deleteall /parent
 
 create /election ""
 ```
+
+## Compile java
+- install mvn: https://maven.apache.org/install.html | `brew install maven`
+- compile: `maven-compiler-plugin`
+- assemble: `maven-assembly-plugin`
+- package: `nvm clean package`
