@@ -44,3 +44,4 @@ create /election ""
 - compile: `maven-compiler-plugin`
 - assemble: `maven-assembly-plugin`
 - package: `nvm clean package`
+- run packaged file: `java -jar file.jar`
