@@ -20,3 +20,21 @@ zkServer.sh start-foreground
 ```console
 zkCli.sh
 ```
+
+- CLI on client
+```console
+ls /
+
+create /parent "data for parent"
+ls /
+get /parent
+
+create /parent/child "data for child"
+ls /
+ls /parent
+get /parent/child
+
+deleteall /parent
+
+create /election ""
+```
