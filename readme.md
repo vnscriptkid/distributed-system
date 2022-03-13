@@ -12,7 +12,7 @@
 - What? multiple servers, connected and know each other's state, all serving one purpose
 - How? one process / machine
 - Problems solved:
-  - Scale up: horizontal scaling, adding more machines, no limit.
-  - No single point of failure
+  - Scale up: **horizontal scaling**, adding more machines, no limit.
+  - No single point of failure: ** fault tolerant**
   - Low latency: (1) reqs are shared by multiple servers (2) reqs are served from nearest server
   - Security and Privacy: servers stay behind proxy, better security and privacy. 
