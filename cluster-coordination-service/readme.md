@@ -45,3 +45,9 @@ create /election ""
 - assemble: `maven-assembly-plugin`
 - package: `nvm clean package`
 - run packaged file: `java -jar file.jar`
+
+## Master-Workers architecture:
+- parallel computing: master breaks task into sub-tasks and distribute work to worker machines, and then aggregate results
+- distributed database: (master-slave) 
+  - too much data to fit in one machine, data is store across distributed machines, 
+  - there must be one master node, who knows where a piece of data is stored, and where to write data.
