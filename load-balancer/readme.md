@@ -9,6 +9,9 @@
 - Software: 
   - running on commodity server, cheaper, flexible, easy to configure
   - nginx, HAProxy
+  - modes:
+    - layer 4: simple LB logic (based TCP packets)
+    - layer 7: more control over LB logic
 
 ## strategies?
 - statistical
