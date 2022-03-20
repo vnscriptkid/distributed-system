@@ -10,7 +10,7 @@
   - running on commodity server, cheaper, flexible, easy to configure
   - nginx, HAProxy
   - modes:
-    - layer 4: simple LB logic (based TCP packets)
+    - layer 4: simple LB logic (based TCP packets), minimum latency
     - layer 7: more control over LB logic
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/28957748/159158714-91c16caf-1641-4750-b47c-738224ecd0f5.png">
