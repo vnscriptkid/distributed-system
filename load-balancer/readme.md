@@ -17,7 +17,7 @@
   - weighted round-robin
   - source ip hash
     - session stickiness: reqs from same user goes to the same app servers
-    - examples: shopping cart, video streaming
+    - examples: shopping cart, video streaming (maintain streaming session)
 - active
   - least connections
     - most open conn ~ busy => receive less
