@@ -35,4 +35,13 @@ bin/kafka-server-start.sh config/server.properties
 
 # create `chat` topic for the kafka server
 bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic chat
+
+# list all topics of the server
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+# start a producer and push messages to chat topic
+bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic chat
+
+# start a consumer and pull messages from chat topic from beginning
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic chat --from-beginning
 ```
