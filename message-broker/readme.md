@@ -22,10 +22,15 @@
     - works in parallel
 - consumer group
 
+## messages distribution mechanism:
+- explicit: specify partition
+- decouple (publisher & kafka servers config): provide key (will be hashed to find partition)
+- round-robin: no key provided
+
 ## Q
 - what decides parallelism of kafka?
 
-## demo
+## demo 1
 ```bash
 # start zookeeper server
 bin/zookeeper-server-start.sh config/zookeeper.properties
