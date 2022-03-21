@@ -11,11 +11,17 @@
 
 ## kafka
 - is distributed system itself
+  - perf, horizontal scaling
+  - fault tolerant, HA
 - producer record: { key, value, timestamp }
 - topic:
   - category of messages
-  - can have many partitions (each is just a queue) => horizontal scale, global ordering is not possible with multiple partitions (trade-off)
+  - can have many partitions 
+    - each is just a queue 
+    - horizontal scale, global ordering is not possible with multiple partitions (trade-off)
+    - works in parallel
 - consumer group
+- 
 
 ## Q
 - what decides parallelism of kafka?
