@@ -13,5 +13,5 @@
 - producer record: { key, value, timestamp }
 - topic:
   - category of messages
-  - can have many partitions (each is just a queue)
+  - can have many partitions (each is just a queue) => horizontal scale
 - consumer group
