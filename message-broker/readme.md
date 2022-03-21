@@ -9,9 +9,13 @@
 
 ## use cases?
 
-## kafka concepts
+## kafka
+- is distributed system itself
 - producer record: { key, value, timestamp }
 - topic:
   - category of messages
-  - can have many partitions (each is just a queue) => horizontal scale
+  - can have many partitions (each is just a queue) => horizontal scale, global ordering is not possible with multiple partitions (trade-off)
 - consumer group
+
+## Q
+- what decides parallelism of kafka?
