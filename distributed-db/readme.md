@@ -33,4 +33,11 @@
   - strategies:
     - hash based: hash key to determine which bucket to place into
     - range based: consecutive keys are likely to be in the same bucket
-  - distribute buckets to shards
+  - chunks:
+    - distribute buckets to shards evenly
+    - chunk splits when reaching size threshold
+    - chunk migration and balancing
+  - cluster:
+    - router (mongos)
+    - config server
+    - prod env: each shard as replication set
