@@ -41,3 +41,8 @@
     - router (mongos)
     - config server
     - prod env: each shard as replication set
+
+## sharding design considerations
+- is collection heavy-read or heavy-write
+- what is the field on which user searches
+- is there any hotspot in our system (a lot of user queries on, example: famous movies)
