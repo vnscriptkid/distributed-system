@@ -24,3 +24,13 @@
     - nearest: distribute replication set to diff geo location => read from nearest
       - pros: lower latency, higher throughput
       - cons: data consistency (eventual consistency)
+
+## sharding
+- why?
+  - scalability => horizontal scaling
+
+- mongodb
+  - strategies:
+    - hash based: hash key to determine which bucket to place into
+    - range based: consecutive keys are likely to be in the same bucket
+  - distribute buckets to shards
