@@ -4,10 +4,13 @@
 - why?
   - HA
   - Fault tolerant
+
 - mongodb
   - replication set: variation of master-slave
   - master handle read, write reqs
   - slaves constantly keep data in sync with master (async)
+  - if master goes down, new master is elected from slaves
+
 - write semantics
   - why? it's problematic when master goes down before new data is synced with slaves
   - solution: write concern (2 or many) => proactively write to master and one or some slaves
