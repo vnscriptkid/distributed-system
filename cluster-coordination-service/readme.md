@@ -51,3 +51,9 @@ create /election ""
 - distributed database: (master-slave) 
   - too much data to fit in one machine, data is store across distributed machines, 
   - there must be one master node, who knows where a piece of data is stored, and where to write data.
+
+## Leader election
+- pros:
+  - eliminate concurrency issue
+- cons
+  - introduce Single point of failure
