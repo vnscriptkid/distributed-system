@@ -29,6 +29,10 @@
 - why?
   - scalability => horizontal scaling
 
+- cons:
+  - operations on multiple shards
+  - concurrency control: need distributed lock
+
 - mongodb
   - strategies:
     - hash based: hash key to determine which bucket to place into
