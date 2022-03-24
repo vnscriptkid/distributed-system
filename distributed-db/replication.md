@@ -8,6 +8,10 @@
   - create redundancy for higher availability, fault tolerant
   - master-slave arch
 
+## replication models:
+- master-slaves
+- master-master
+
 ## eventual vs strict consistency:
 - def:
   - eventual: one user updates data, it takes some time to others user can see new data. (temporarily see stale data)
