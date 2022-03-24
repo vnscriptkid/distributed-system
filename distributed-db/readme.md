@@ -32,7 +32,10 @@
 - mongodb
   - strategies:
     - hash based: hash key to determine which bucket to place into
+      - pros: even distribution
+      - cons: consecutive keys are not in the same shard   
     - range based: consecutive keys are likely to be in the same bucket
+      - use case: range based queries
   - chunks:
     - distribute buckets to shards evenly
     - chunk splits when reaching size threshold
@@ -45,4 +48,21 @@
 ## sharding design considerations
 - is collection heavy-read or heavy-write
 - what is the field on which user searches
+- do users sort by field?
 - is there any hotspot in our system (a lot of user queries on, example: famous movies)
+
+## sql vs non-sql
+- sql
+  - structured, 
+  - ACID compliant: atomicity, consistency, isolation, durability
+    - JOIN
+    - transaction
+- non-sql
+  - no structured
+  - eventual consistency (update might not be reflected right away)
+    - no way to query multiple collections at once
+  - easy to scale, shard
+
+## sharding in sql
+- vertical: fewer columns
+- horizontal: small subsets
